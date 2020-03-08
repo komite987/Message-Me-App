@@ -1,0 +1,22 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+
+.nav_link {
+  color: #ffffff !important;
+}
+
+.nav-item:hover {
+  background-color: #e8e8e8;
+  a{
+    color: black !important;
+
+  }
+}
+
+.dropdown-menu-right {
+  margin-top: 8px;
+}
+
+.btn-outline-success {
+  margin-left: 10px;
+}
