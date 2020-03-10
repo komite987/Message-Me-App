@@ -1,2 +1,49 @@
-<h1>Sessions#new</h1>
-<p>Find me in app/views/sessions/new.html.erb</p>
+<br>
+<h2 class="text-center">Welcome to MessageMe app</h2>
+<br>
+<h3 class="text-center">
+  <i class="fas fa-power-off" style="color: #ff8000;"></i><br>
+  Log in now
+</h3>
+<div class="split-layout">
+  <div class="split-layout__item text-center split-layout2">
+    <form>
+      <div class="form-group">
+        <label for="validationDefaultUsername" class="text-left">Username</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroupPrepend2">
+              <i class="fas fa-user"></i>
+            </span>
+          </div>
+          <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required="required" placeholder="Enter Username" autofocus>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroupPrepend2">
+              <i class="fas fa-user-lock"></i>
+            </span>
+          </div>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-warning font-weight-bold text-white">Log in</button>
+    </form>
+  </div>
+  <div class="split-layout__divider">
+    <div class="split-layout__rule"></div>
+    <div class="split-layout__label">OR</div>
+    <div class="split-layout__rule"></div>
+  </div>
+  <div class="split-layout__item text-center split-layout2">
+    <div class="right">
+      <button type="button" class="btn btn-warning btn-lg font-weight-bolder text-white">
+        <i class="fas fa-user-plus"></i>
+        Sign Up</button>
+    </div>
+  </div>
+
+</div>
