@@ -20,14 +20,22 @@
             Account
           </a>
           <div class="dropdown-menu dropdown-menu-right text-center" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Log out</a>
-            <%= link_to 'Log in', login_path, class:"dropdown-item" %>
-            <a class="dropdown-item" href="#">Sign up</a>
-          </li>
-          <li>
-            <button class="btn btn-outline-warning my-2 my-sm-0">Sign Up</button>
+            <% if logged_in? %>
+              <%= link_to 'Log out', logout_path, method: :delete, class:"dropdown-item" %>
+            <% else %>
+              <%= link_to 'Log in', login_path, class:"dropdown-item" %>
+            <% end %>
           </li>
 
+          <% if !logged_in? %>
+            <li>
+              <%= link_to 'Log in', login_path, class:"btn btn-outline-warning my-2 my-sm-0" %>
+            </li>
+          <% else %>
+              <span class="badge badge-info">
+                <%= "Hello #{current_user.username}"%>
+              </span>
+          <% end %>
         </ul>
       </div>
     </div>
