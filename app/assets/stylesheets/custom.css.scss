@@ -1,28 +1,33 @@
 @import 'bootstrap/dist/css/bootstrap';
-*{
+
+* {
   box-sizing: border-box;
 }
+
 .nav_link {
   color: #ffffff !important;
 }
 
-.nav-item:hover {
+.nav_item:hover {
   background-color: #f9bc06;
 
   a {
     color: black !important;
+    font-weight: bold;
+    letter-spacing: -1px;
   }
 }
 
 .dropdown-menu-right {
-  margin-top: 8px;
+  margin-top: -1px;
 }
 
 .btn-outline-warning {
   margin-left: 10px;
 }
 
-i.fa-comments, .fa-power-off {
+.fa-power-off,
+i.fa-comments {
   display: inline-block;
   border: 2px solid #808080;
   border-radius: 60px;
@@ -51,13 +56,12 @@ i.fa-comments, .fa-power-off {
 }
 
 .my-form {
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
 .card-footer {
   padding-bottom: 0;
 }
-
 
 .split-layout {
   height: 40vh;
@@ -65,22 +69,20 @@ i.fa-comments, .fa-power-off {
   flex-direction: column;
   margin-top: 25px;
   border: 2px solid #a8a8a8;
-
   @media screen and (min-width: 30em) {
     flex-direction: row;
     align-items: stretch;
   }
 }
 
-.split-layout__item  {
+.split-layout__item {
   flex: 1;
   padding-left: 15px;
-
   @media screen and (min-width: 30em) {
     padding-left: 0;
 
     &:first-child {
-    padding: 0;
+      padding: 0;
     }
   }
 }
@@ -89,9 +91,8 @@ i.fa-comments, .fa-power-off {
   display: flex;
   flex-direction: row;
   align-items: center;
-
   @media screen and (min-width: 30em) {
-   flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -104,22 +105,45 @@ i.fa-comments, .fa-power-off {
   border-style: solid;
   border-color: black;
   border-width: 1px 0 0 0;
-
   @media screen and (min-width: 30em) {
-   border-width: 0 1px 0 0;
+    border-width: 0 1px 0 0;
   }
 }
+
 .split-layout2 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.input-group-prepend, .input-group-text {
+.input-group-prepend,
+.input-group-text {
   border-right: none !important;
   background-color: white !important;
 }
 
-#exampleInputPassword1, #validationDefaultUsername {
+#exampleInputPassword1,
+#validationDefaultUsername {
   border-left: none !important;
 }
+
+.dropdown-menu-right {
+  background-color: #343a40;
+  margin-top: 5px;
+}
+
+.dropdown-menu-right a {
+  color: #ffffff;
+}
+
+.dropdown-toggle:hover{
+  color: black !important;
+  font-weight: bold;
+
+}
+
+  .dropdown-menu-right a:hover {
+    background-color: #f9bc06;
+    color: black !important;
+    font-weight: bold;
+  }
