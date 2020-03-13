@@ -47,7 +47,7 @@ i.fa-comments {
   box-shadow: 5px 5px 3px grey;
 }
 
-.card {
+.chatroom {
   height: 65vh;
 }
 
@@ -151,4 +151,12 @@ i.fa-comments {
   padding-bottom: 13px;
   margin-left: 15px !important;
   font-size: 0.85em;
+}
+
+#message-container {
+  overflow: auto;
+}
+
+#button-addon2 {
+  display: none;
 }

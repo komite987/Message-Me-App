@@ -4,6 +4,7 @@
   <i class="fas fa-power-off" style="color: #ff8000;"></i><br>
   Log in now
 </h3>
+
 <div class="split-layout">
   <div class="split-layout__item text-center split-layout2">
     <%= form_with(scope: :session, url: login_path, local:true) do |f| %>
@@ -39,7 +40,7 @@
 </div>
 <div class="split-layout__item text-center split-layout2">
   <div class="right">
-    <button type="button" class="btn btn-warning btn-lg font-weight-bolder">
+    <button type="button" class="btn btn-warning btn-lg font-weight-bolder" onclick="window.location.href='/signup'">
       <i class="fas fa-user-plus"></i>
       Sign Up</button>
   </div>
