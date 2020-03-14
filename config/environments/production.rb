@@ -90,7 +90,7 @@ Rails.application.configure do
   config.cache_store = :redis_store if ENV['REDIS_URL']
 
   config.web_socket_server_url = "wss://komite-messagme.herokuapp.com/cable"
-  config.action_cable.allowed_request_origins = ['https://komite-messagme.herokuapp.com', 'http://komite-messagme.herokuapp.com']
+  # config.action_cable.allowed_request_origins = ['https://komite-messagme.herokuapp.com', 'http://komite-messagme.herokuapp.com']
 
 
   # Inserts middleware to perform automatic connection switching.
